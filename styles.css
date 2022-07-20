@@ -1,0 +1,34 @@
+* {
+    /* border: 1px solid red; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f8eee7;
+}
+
+button {
+    border-radius: 13px;
+    color: #f8eee7;
+    background-color: #94618e;
+}
+
+#button-container {
+    display: flex;
+    background-color: #f4decb;
+    justify-content: center;
+    gap: 10px;
+}
+
+#title {
+    text-align: center;
+}
+
+.scoreboard {
+    background-color: #f4decb;
+    text-align: center;
+}
+
+/* use image for background
+add button images 
+maybe add CPU decisions
+show current score
+make prettier
+*/
