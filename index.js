@@ -3,6 +3,12 @@ let computerChoice = getComputerChoice();
 let winCounter = 0;
 let loseCounter = 0;
 let playerInput;
+var elem = document.createElement("img");
+
+elem.setAttribute("height", "153");
+elem.setAttribute("width", "153");
+
+
 
 //eventlistener
 document.getElementById("RK").addEventListener("click", inpRock);
@@ -48,6 +54,15 @@ function playRound(playerSelection, computerChoice) {
             console.log('You lose!')
             loseCounter++;
         }
+        if (computerChoice == 'ROCK') {
+            elem.src = 'images/rock.png';
+        } else if (computerChoice == 'PAPER') {
+            elem.src = 'images/paper.png';
+        } else if (computerChoice == 'SCISSORS') {
+            elem.src = 'images/scissors.png';
+        }
+        document.getElementById('cpu-choice').appendChild(elem);
+        document.getElementById('score').innerHTML = `Player: ${winCounter} Wins <br> CPU: ${loseCounter} Wins`;
         console.log("Player:" + playerSelection);
         console.log("CPU: " + computerChoice);
         // return winCounter, loseCounter;

@@ -10,16 +10,23 @@
 </head>
 
 <body>
-    <h1 id="title">Rock, Paper, Scissors!</h1>
-    <div id="button-container">
-        <button id="RK">Rock</button>
-        <button id="PP">Paper</button>
-        <button id="SC">Scissors</button>
+    <div id="b-image">
+        <h1 id="title">Rock, Paper, Scissors!</h1>
+        <div id="button-container">
+            <div id="p-container">
+                <button id="RK"><img id="r-img" src="images/rock.png" alt=""></button>
+                <button id="PP"><img id="p-img" src="images/paper.png" alt=""></button>
+                <button id="SC"><img id="s-img" src="images/scissors.png" alt=""></button>
+            </div>
+            <div id="vs">VS</div>
+            <div id="c-container">
+                <button id="cpu-choice"></button>
+            </div>
+        </div>
+        <br>
+        <div class="scoreboard" id="score">Player: 0 Wins <br> CPU: 0 Wins </div>
+
     </div>
-    <br>
-    <div class="scoreboard" id="score">Player: 0 Wins <br> CPU: 0 Wins </div>
-
-
     <script src="index.js"></script>
 </body>
 
